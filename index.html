@@ -6,3 +6,10 @@
     hej med dig
   </body>
 </html>
+<script>    
+  navigator.geolocation.getCurrentPosition(showPosition);
+  
+  function showPosition(position) {
+    alert(position.coords.altitude+' '+position.coords.altitudeAccuracy)
+  } 
+</script>
